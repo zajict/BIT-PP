@@ -17,6 +17,23 @@ Output: yes */
 
 
 
+// Input:  e = 3, a = [5, -4.2, 18, 7]
+// Output: no
+
+var a = [5, -4.2, 18, 7];
+result1 = "No";
+
+for (var i = 0; i < a.length; i++) {
+	if (a[i] === e) {
+         result1 = "Yes";
+        break;
+    }
+}
+ console.log(result1);
+ 
+
+
+
 /*2.	Write a program that multiplies every positive element of a given array by 2.
 Input array: [-3, 11, 5, 3.4, -8]
 Output array: [-3, 22, 10, 6.8, -8] */
