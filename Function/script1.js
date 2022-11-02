@@ -4,12 +4,14 @@ function calculateMaximum (a, b) {
     var max;
     if (a < b) {
         max = b;
+        return b;
 
     }else if (a > b) {
         max = a;
+        return a;
       
     }
-      return max;
+      return "Numbers are equal";
 } 
 var maximum = calculateMaximum(6, 54);
 
@@ -25,11 +27,12 @@ function checkNumberIsOdd (number) {
     var result = "";
     if (number % 2 === 0) {
         result = "Even";
+        return result;
 
     }else if (number % 2 ===1) {
         result = "Odd";
-    }
         return result;
+    }
 }
 
 var isOdd = checkNumberIsOdd(102);
@@ -48,11 +51,13 @@ function checkNumberIsThreeDigitLong (number) {
         return result;
     } else if ( number < 99 ) {
         result = "Number isn't three digit long";
+        return result;
 
     } else if (number > 1000); {
         result = "Number isn't three digit long";
+        return result;
     }
-    return result;
+
 }
   var isThreeDigitLong = checkNumberIsThreeDigitLong(789);
   console.log(isThreeDigitLong);
@@ -61,6 +66,26 @@ function checkNumberIsThreeDigitLong (number) {
 
 
 // 4.	Write a program that calculates an arithmetic mean of four numbers.
+
+function checkArithmeticMean (a, b, c, d) {
+    var arr = [a, b, c, d];
+    var result = 0;
+    var sum = 0;
+    for ( var i = 0; i < arr.length; i++) {
+        if (arr.length === 4);
+        sum += arr[i];
+        result = sum / 4;
+    }
+    
+    return result;
+}
+
+
+var arithmeticMean = checkArithmeticMean(5, 5, 5, 5);
+console.log(arithmeticMean);
+
+
+
 
 /* 5.	Write a program that draws a square of a given size. For example,  if the size of square is 5 the program should draw: 
 *****
