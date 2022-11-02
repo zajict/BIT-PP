@@ -4,14 +4,18 @@ function calculateMaximum (a, b) {
     var max;
     if (a < b) {
         max = b;
+
     }else if (a > b) {
         max = a;
+      
     }
-    return max;
+      return max;
 } 
 var maximum = calculateMaximum(6, 54);
 
 console.log(maximum);
+
+
 
 
 
@@ -21,22 +25,40 @@ function checkNumberIsOdd (number) {
     var result = "";
     if (number % 2 === 0) {
         result = "Even";
+
     }else if (number % 2 ===1) {
         result = "Odd";
     }
-    return result;
+        return result;
 }
 
-var isOdd = checkNumberIsOdd(81);
+var isOdd = checkNumberIsOdd(102);
 console.log(isOdd);
 
 
 
 
 
-
-
 // 3.	Write a program that checks if a given number is a three digit long number.
+
+function checkNumberIsThreeDigitLong (number) {
+    var result = "";
+    if (number > 99 && number < 1000) {
+        result = "Number is three digit long";
+        return result;
+    } else if ( number < 99 ) {
+        result = "Number isn't three digit long";
+
+    } else if (number > 1000); {
+        result = "Number isn't three digit long";
+    }
+    return result;
+}
+  var isThreeDigitLong = checkNumberIsThreeDigitLong(789);
+  console.log(isThreeDigitLong);
+
+
+
 
 // 4.	Write a program that calculates an arithmetic mean of four numbers.
 
