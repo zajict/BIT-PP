@@ -197,9 +197,38 @@ function numberOfLetter(a, b) {
     return count;
 }
 var numberOf = numberOfLetter("", "")
-
 console.log(numberOf);
 
+
+function numberOfLetter_a (a) {
+    var word = "Antidisestablishmentarianism";
+    var count1 = 0;
+    var a = "a";
+    for (var i = 0; i < word.length; i++) {
+        if (word[i] === a) {
+            count1 ++;
+        }
+    }
+    return count1;
+}
+var letter_a = numberOfLetter_a ("");
+console.log(letter_a);
+
+
+
+function numberOfLetter_A (a) {
+    var word = "Antidisestablishmentarianism";
+    var count2 = 0;
+    var a = "A";
+    for (var i = 0; i < word.length; i++) {
+        if (word[i] === a) {
+            count2 ++;
+        }
+    }
+    return count2;
+}
+var letter_A = numberOfLetter_A ("");
+console.log(letter_A);
 
 /*11.	Write a program that concatenates a given string given number of times. For example, if “abc” and 4 are given values, the program prints out abcabcabcabc. */
 
