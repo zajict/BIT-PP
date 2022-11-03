@@ -80,8 +80,7 @@ function checkArithmeticMean (a, b, c, d) {
     return result;
 }
 
-
-var arithmeticMean = checkArithmeticMean(5, 5, 5, 5);
+var arithmeticMean = checkArithmeticMean(24, 66, 5, 9);
 console.log(arithmeticMean);
 
 
@@ -102,6 +101,28 @@ console.log(arithmeticMean);
 */
 
 // 7.	Write a program that calculates a number of digits of a given number. 
+
+function digits_count(a) {
+  var digits_count = 0;
+  if (a >= 1); {
+    digits_count ++;
+   
+
+    while (a / 10 >= 1) {
+    a /= 10;
+    ++digits_count;
+    }
+  }
+  return digits_count;
+}
+
+var count = digits_count(12345678910);
+console.log(count);
+
+
+
+
+
 
 /* 8.	Write a program that calculates a number of appearances of a given number in a given array.
 Inputs: a = [2, 4, 7, 8, 7, 7, 1], e = 7
