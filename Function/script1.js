@@ -129,6 +129,25 @@ Inputs: a = [2, 4, 7, 8, 7, 7, 1], e = 7
 Result: 3
  */
 
+ function appearancesOfNumber(e) {
+    var a = [2, 4, 7, 8, 7, 7, 1];
+    var e = 7;
+    var count = 0;
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] === e) {
+            count ++;
+        }
+    }
+    return count;
+ }
+ var appearances = appearancesOfNumber(7);
+ console.log(appearances);
+
+
+
+
+
+
 // 9.	Write a program that calculates the sum of odd elements of a given array. 
 
 /* 10.	Write a program that calculates the number of appearances of a letter a in a given string. Modify the program so it calculates the number of both letters a and A.
