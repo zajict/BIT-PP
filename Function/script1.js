@@ -150,6 +150,24 @@ Result: 3
 
 // 9.	Write a program that calculates the sum of odd elements of a given array. 
 
+function sumOdd(a) {
+    var a = [2, 4, 7, 8, 7, 7, 1];
+    var sum = 0;
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] % 2 ===0) {
+            sum += a[i];
+        }
+    }
+    return sum;
+ }
+ var f = sumOdd([2, 4, 7, 8, 7, 7, 1]);
+ console.log(f);
+
+
+
+
+
+
 /* 10.	Write a program that calculates the number of appearances of a letter a in a given string. Modify the program so it calculates the number of both letters a and A.
 */
 
