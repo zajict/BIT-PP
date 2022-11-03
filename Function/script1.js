@@ -104,6 +104,7 @@ console.log(arithmeticMean);
 
 function digits_count(a) {
   var digits_count = 0;
+
   if (a >= 1); {
     digits_count ++;
    
@@ -131,8 +132,8 @@ Result: 3
 
  function appearancesOfNumber(e) {
     var a = [2, 4, 7, 8, 7, 7, 1];
-    var e = 7;
     var count = 0;
+    
     for (var i = 0; i < a.length; i++) {
         if (a[i] === e) {
             count ++;
@@ -151,7 +152,7 @@ Result: 3
 // 9.	Write a program that calculates the sum of odd elements of a given array. 
 
 function sumOdd(a) {
-    var a = [2, 4, 7, 8, 7, 7, 1];
+
     var sum = 0;
     for (var i = 0; i < a.length; i++) {
         if (a[i] % 2 ===0) {
@@ -165,10 +166,40 @@ function sumOdd(a) {
 
 
 
-
-
-
 /* 10.	Write a program that calculates the number of appearances of a letter a in a given string. Modify the program so it calculates the number of both letters a and A.
 */
 
+
+function letters_count(a) {
+    var letter =  "Antidisestablishmentarianism";
+    var _count = 0;
+    for (var i = 0; i < letter.length; i++) {
+        if (letter[i] += 1) _count++;{
+        }
+    }
+    return _count;
+}
+var m = letters_count("");
+console.log(m);
+
+
+
+function numberOfLetter(a, b) {
+    var word = "Antidisestablishmentarianism";
+    var count = 0;
+    var a = "A";
+    var b = "a";
+    for (var i = 0; i < word.length; i++) {
+        if ((word[i] === a) || (word[i] === b)){
+            count ++;
+        }
+    }
+    return count;
+}
+var numberOf = numberOfLetter("", "")
+
+console.log(numberOf);
+
+
 /*11.	Write a program that concatenates a given string given number of times. For example, if “abc” and 4 are given values, the program prints out abcabcabcabc. */
+
