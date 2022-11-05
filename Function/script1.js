@@ -4,16 +4,16 @@ function calculateMaximum (a, b) {
     var max;
     if (a < b) {
         max = b;
-        return b;
+        return max;
 
     }else if (a > b) {
         max = a;
-        return a;
+        return max;
       
     }
       return "Numbers are equal";
 } 
-var maximum = calculateMaximum(6, 54);
+var maximum = calculateMaximum(200, 87);
 
 console.log(maximum);
 
@@ -46,9 +46,11 @@ console.log(isOdd);
 
 function checkNumberIsThreeDigitLong (number) {
     var result = "";
+
     if (number > 99 && number < 1000) {
         result = "Number is three digit long";
         return result;
+
     } else if ( number < 99 ) {
         result = "Number isn't three digit long";
         return result;
@@ -57,9 +59,9 @@ function checkNumberIsThreeDigitLong (number) {
         result = "Number isn't three digit long";
         return result;
     }
-
+    
 }
-  var isThreeDigitLong = checkNumberIsThreeDigitLong(789);
+  var isThreeDigitLong = checkNumberIsThreeDigitLong(10000043849);
   console.log(isThreeDigitLong);
 
 
@@ -67,20 +69,19 @@ function checkNumberIsThreeDigitLong (number) {
 
 // 4.	Write a program that calculates an arithmetic mean of four numbers.
 
-function checkArithmeticMean (a, b, c, d) {
-    var arr = [a, b, c, d];
-    var result = 0;
+function checkArithmeticMean (arr) {
+
+    var ar_mean = 0;
     var sum = 0;
     for ( var i = 0; i < arr.length; i++) {
         if (arr.length === 4);
         sum += arr[i];
-        result = sum / 4;
+        ar_mean = sum / arr.length;
     }
-    
-    return result;
+    return ar_mean;
 }
 
-var arithmeticMean = checkArithmeticMean(24, 66, 5, 9);
+var arithmeticMean = checkArithmeticMean([24, 66, 5, 9]);
 console.log(arithmeticMean);
 
 
@@ -102,15 +103,15 @@ console.log(arithmeticMean);
 
 // 7.	Write a program that calculates a number of digits of a given number. 
 
-function digits_count(a) {
+function digits_count(number) {
   var digits_count = 0;
 
-  if (a >= 1); {
-    digits_count ++;
+  if (number >= 0); {
+    digits_count++;
    
 
-    while (a / 10 >= 1) {
-    a /= 10;
+    while (number / 10 >= 1) {
+    number /= 10;
     ++digits_count;
     }
   }
@@ -166,69 +167,55 @@ function sumOdd(a) {
 
 
 
+
+
 /* 10.	Write a program that calculates the number of appearances of a letter a in a given string. Modify the program so it calculates the number of both letters a and A.
 */
-
-
-function letters_count(a) {
-    var letter =  "Antidisestablishmentarianism";
+function letters_count(word) {
     var _count = 0;
-    for (var i = 0; i < letter.length; i++) {
-        if (letter[i] += 1) _count++;{
+    for (var i = 0; i <= word.length; i++) {
+        if (word[i] += 1) _count++;{
         }
     }
     return _count;
 }
-var m = letters_count("");
+var m = letters_count("Antidisestablishmentarianism");
 console.log(m);
 
 
 
-function numberOfLetter(a, b) {
-    var word = "Antidisestablishmentarianism";
+
+function numberOfLetter(n) {
     var count = 0;
     var a = "A";
     var b = "a";
-    for (var i = 0; i < word.length; i++) {
-        if ((word[i] === a) || (word[i] === b)){
+    for (var i = 0; i <= n.length; i++) {
+        if ((n[i] === a) || (n[i] === b)){
             count ++;
         }
     }
     return count;
 }
-var numberOf = numberOfLetter("", "")
+var numberOf = numberOfLetter("Antidisestablishmentarianism")
 console.log(numberOf);
 
 
-function numberOfLetter_a (a) {
-    var word = "Antidisestablishmentarianism";
-    var count1 = 0;
-    var a = "a";
-    for (var i = 0; i < word.length; i++) {
-        if (word[i] === a) {
-            count1 ++;
-        }
-    }
-    return count1;
-}
-var letter_a = numberOfLetter_a ("");
-console.log(letter_a);
 
 
-
-function numberOfLetter_A (a) {
-    var word = "Antidisestablishmentarianism";
-    var count2 = 0;
-    var a = "A";
-    for (var i = 0; i < word.length; i++) {
-        if (word[i] === a) {
-            count2 ++;
-        }
-    }
-    return count2;
-}
-var letter_A = numberOfLetter_A ("");
-console.log(letter_A);
 
 /*11.	Write a program that concatenates a given string given number of times. For example, if “abc” and 4 are given values, the program prints out abcabcabcabc. */
+
+function numberOfGivenString (string, times) {
+    var letter = "";
+
+    while ( times > 0) {
+        letter += string;
+        times--;
+    }
+    return letter;
+}
+ var numberOString = numberOfGivenString('abc', 4);
+ console.log(numberOString);
+
+
 
