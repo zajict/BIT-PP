@@ -284,6 +284,37 @@ console.log(y);
 Input:  17    | 15
 Output: true  | false
 */
+function checkIfNumberISPrime (number) {
+    var checkNUmber = 2;
+    var result = true;
+    while ( checkNUmber < number) {
+        if ( number % checkNUmber === 0 ) {
+            result = false;
+        }
+        checkNUmber++;
+    }
+    return result;
+}
+var y = checkIfNumberISPrime(17);
+console.log(y);
+
+
+
+function checkIfNumberISPrime(number) {
+    checkNUmber = 2;
+    result = true;
+    while (checkNUmber < number) {
+        if (number % checkNUmber === 0) {
+            result = false;
+        }
+        checkNUmber ++;
+    }
+    return result;
+}
+var y = checkIfNumberISPrime(15);
+console.log(y);
+
+
 
 
 /*   	
@@ -291,6 +322,23 @@ Output: true  | false
 Input:  eye  | Geek  | a nut for a jar of tuna
 Output: true | false | true
 */
+// program to check if the string is palindrome or not
+function checkIfStringISPalindrome(string) {
+    var length = string.length; 
+    for (var i = 0; i < length; i++) {
+        if (string[i] !== string[length - 1 - i]) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+}
+var y = checkIfStringISPalindrome("a nut for a jar of tuna");
+
+
+
+console.log(y);
+
 
 
 
