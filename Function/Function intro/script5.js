@@ -343,6 +343,11 @@ console.log(y);
 Input:  192 42 | 81 9
 Output: 6      | 9 */
 function calculateGreatestCommonDivisor (a, b) {
-   
+   if (!b) {
+    return a;
+   }
+   return calculateGreatestCommonDivisor(b, a % b);
 }
+var y = calculateGreatestCommonDivisor(81, 9);
+console.log(y);
 
