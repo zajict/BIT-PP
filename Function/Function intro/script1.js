@@ -94,12 +94,51 @@ console.log(arithmeticMean);
 *    *
 *****
 */
+function drawSquareOfGivenSize(y, x) {
+    var square = "";
+    for (var i = 0; i < y; i++) {
+        for (var j = 0; j < x; j++) {
+            if (i === 0 || i === y - 1 || j === 0 || j === x - 1) {
+                square += "*";
+            } else {
+                square += " ";
+            }
+        }
+        if (i !== y - 1) 
+            square += "\n";
+    }
+    return square;
+}
+console.log(drawSquareOfGivenSize(5, 5));
+
+
+
 
 /* 6.	Write a program that draws a horizontal chart representing three given values. For example, if values are 5, 3, and 7, the program should draw:
 * * * * *
 * * *
 * * * * * * *
+
 */
+function drawingHorizontalChart(x, y, z) {
+    var draw = "";
+    for (var i = 0; i < x; i++) {
+        draw += "*";}
+    if (i !== x - 1) 
+        draw += "\n";
+    for (var j = 0; j < y; j++) {
+        draw += "*";}
+    if (j !== y - 1) 
+        draw += "\n";
+    for (var a = 0; a < z; a++) {
+        draw += "*";
+    }
+    return draw;
+}
+console.log(drawingHorizontalChart(5, 3, 7));
+
+
+
 
 // 7.	Write a program that calculates a number of digits of a given number. 
 
@@ -124,8 +163,6 @@ console.log(count);
 
 
 
-
-
 /* 8.	Write a program that calculates a number of appearances of a given number in a given array.
 Inputs: a = [2, 4, 7, 8, 7, 7, 1], e = 7
 Result: 3
@@ -144,9 +181,6 @@ Result: 3
  }
  var appearances = appearancesOfNumber(7);
  console.log(appearances);
-
-
-
 
 
 
