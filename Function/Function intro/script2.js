@@ -218,19 +218,26 @@ console.log(y);
 
 
 /* 12.	 Write a function to calculate how many years there are left until retirement based on the year of birth. Retirement for men is at age of 65 and for women at age of 60. If someone is already retired, a proper message should be displayed. */
-// function yearsUntilRetirement(yearOfBirth, currentYear) {
-//     var man = 65;
-//     var woman = 60;
-//     var retirementYear;
-//     if (yearOfBirth < currentYear) {
-
-//     }
-//     if () {
-
-//     }
-// }
-// var y = yearsUntilRetirement(1972, 2022);
-// console.log(y);
+function yearsUntilRetirement(age, gender) {
+    var man = 65;
+    var woman = 60;
+    var retirementYear;
+    if (gender === "male" && age >= 65) {
+        return "Person is already retired";
+    }
+    if (gender === "female" && age >= 60) {
+        return "Person is already retired";
+    }
+    if (gender === "male") {
+        retirementYear = man - age;
+        return retirementYear;
+    }
+    if (gender === "female") {
+        retirementYear = woman - age;
+        return retirementYear;
+    }
+}
+console.log(yearsUntilRetirement(31, "female"));
 
 
 
@@ -239,6 +246,23 @@ console.log(y);
 1 -> 1st
 11 -> 11th
 */
+function humanizingNumber (number) {
+    if (number % 100 >= 11 && number % 100 <= 13) 
+        return number + "th";
+        
+    switch (number % 10) {
+        case 1:
+            return number + "st";
+        case 2:
+            return number + "nd";
+        case 3:
+            return number + "rd";
+    }
+    return number + "th";
+}
+console.log(humanizingNumber(11));
+
+
 
 
 
