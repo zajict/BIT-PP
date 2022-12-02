@@ -53,7 +53,7 @@ function filterValueFromArray(array) {
     var newArray = [];
     for (var i = 0; i < array.length; i++) {
         if (array[i]) {
-            newArray.push(array[i]);
+            newArray[newArray.length] = array[i];
         }
     }
     return newArray;
@@ -76,6 +76,30 @@ console.log(y);
     null
 ]
 Output : 3 */
+function countIntegers(array) {
+    var integers = [];
+    for (var i = 0; i < array.length; i++) {
+        if (parseInt(array[i]) === array[i]) {
+            integers[integers.length] = array[i]
+        }
+    }
+    return integers.length
+}
+
+console.log(countIntegers([
+    NaN,
+    23.1,
+    15,
+    false,
+    -22.5,
+    '',
+    4,
+    7,
+    null
+]));
+
+
+
 
 /*5. Write a program that calculates a number of float values in the array.Input : [
     NaN,
@@ -90,4 +114,14 @@ Output : 3 */
 ]
 Output : 2
 */
+function numOfFloat(array) {
+var floats = [];
+for (var i = 0; i < array.length; i++) {
+    if (array[i] !== parseInt(array[i]) && (array[i] === parseFloat(array[i]))) {
+         floats[floats.length] = array[i];
+      }
+    }
+    return floats.length;
+}
+console.log(numOfFloat([NaN, 23.1, 15, false, -22.5, '', 4, 7, null]));
 

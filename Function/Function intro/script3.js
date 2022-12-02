@@ -1,9 +1,3 @@
-/*  Try to solve all assignments on a separate branch of bit-pp repository. Don’t forget to first pull changes done at class and push the new repository to remote when done with all the work at the end.
-
-Ignore this if git branching is not presented to you yet.
-*/
-
-
 /* 1.	Write a program to insert a string within a string at a particular position (default is 1, beginning of a string).
 "My random string", "JS " -> "JS My random string"
 "My random string", "JS ", 10 -> "My random JS string" */
