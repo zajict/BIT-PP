@@ -26,11 +26,11 @@ console.log(output);
 
 // Example 3
 
-// print("This might work or not?");
+print("This might work or not?");
 
-// var print = (function () {
-//     return console.log;
-// })();
+var print = (function () {
+    return console.log;
+})();
 console.log(console.log)
 
 
