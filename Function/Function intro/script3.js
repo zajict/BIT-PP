@@ -1,11 +1,28 @@
 /* 1.	Write a program to insert a string within a string at a particular position (default is 1, beginning of a string).
 "My random string", "JS " -> "JS My random string"
 "My random string", "JS ", 10 -> "My random JS string" */
+function insertString(string, insert, position) {
+    var newString = "";
+    for (var i = 0; i < string.length; i++) {
+        if (i === position - 1) {
+            newString += insert;
+        }
+        newString += string[i]
+    }
+    return newString;
+}
+
+var x = insertString("My random string", "JS", 6);
+console.log(x)
+
+
 
 
 /* 2.	Write a program to join all elements of the array into a string skipping elements that are undefined, null, NaN or Infinity.
 [NaN, 0, 15, false, -22, '', undefined, 47, null] */
-
+function elementOfArrayIntoString(array) {
+    
+}
 
 /* 3.	Write a program to filter out falsy values from the array.
 [NaN, 0, 15, false, -22, '', undefined, 47, null] -> [15, -22, 47] */
