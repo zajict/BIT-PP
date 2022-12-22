@@ -95,7 +95,7 @@ console.log(celsiusToFahrenheit(25));
 
 /*7.	Write a function to find the maximum element in array of numbers. Filter out all non-number elements.*/
 function maxElement(array) {
-    let max = -Infinity;
+    var max = -Infinity;
     for (var i = 0; i < array.length; i++) {
         if (typeof array[i] === 'number' && array[i] > max) {
             max = array[i];
@@ -109,8 +109,22 @@ console.log(maxElement([3, 18, 66, 0, 'a', 'b', 'c', 'd', 14, 44, 87]));
 
 
 /*8.	Write a function to find the maximum and minimum elements. Function returns an array.*/
+function minMaxElement(array) {
+    var min = Infinity; 
+    var max = -Infinity; 
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] < min) 
+            min = array[i];
+       
+        if (array[i] > max) 
+            max = array[i];
+    }
+    return [min, max];
+}
+console.log(minMaxElement([12, 88, 14, 17, 9, 0, -70, -4, 44, 5, 13]));
 
- 
+
+
 
 /*9.	Write a function to find the median element of array.*/
 
