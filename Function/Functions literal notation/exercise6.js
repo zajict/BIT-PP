@@ -14,8 +14,20 @@ console.log(countLetters("My RANDOM string"));
    
 
 /*2.	Write a function that combines two arrays by alternatingly taking elements.
-
 [‘a’,’b’,’c’], [1,2,3] -> [‘a’,1,’b’,2,’c’,3]*/
+function combinesOfTwoArray(a, b) {
+    var newList = [];
+    for (i = 0, j = 0; i < a.length, j < b.length; i++, j ++) {
+        newList += a[i] + b[i];
+    }
+    return newList;
+}
+console.log(combinesOfTwoArray(['a', 'b', 'c'
+], [1, 2, 3]));
+
+
+
+
 
  
 
