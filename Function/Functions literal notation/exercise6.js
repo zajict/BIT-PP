@@ -28,14 +28,36 @@ console.log(combinesOfTwoArray(['a', 'b', 'c'
 
 
 
-
- 
-
 /*3.	Write a function that rotates a list by k elements.
-
 For example [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]*/
+function listRotate(array, k) {
+    var newArray = [];
+    for (var i = k, j = k - array.length; i < array.length + k; i++, j ++) {
+        if (array[i]) {
+            newArray[newArray.length] = array[i];
+        } else {
+            newArray[newArray.length] = array[j];
+        }
+    }
+    return newArray;
+}
+console.log(listRotate([
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+], 2));
 
- 
+
+
+
+
+
+
+
+
 
 /*4.	Write a function that takes a number and returns array of its digits.*/
 
