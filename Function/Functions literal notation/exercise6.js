@@ -69,12 +69,26 @@ console.log(getDigits(123456789));
 
 
 /*5.	Write a program that prints a multiplication table for numbers up to 12.*/
+function printMultiplicationTable (number) {
+    for (var i = 1; i <= number; i++) {
+        var row = "";
+        for (var j = 1; j <= 12; j++) {
+            row += (i * j) + "\t";
+        }
+    }
+    return row;
+}
+console.log(printMultiplicationTable(12));
 
- 
+
+
+
 
 /*6.	Write a function to input temperature in Centigrade and convert to Fahrenheit.*/
 
- 
+
+
+
 
 /*7.	Write a function to find the maximum element in array of numbers. Filter out all non-number elements.*/
 
