@@ -85,14 +85,28 @@ console.log(printMultiplicationTable(12));
 
 
 /*6.	Write a function to input temperature in Centigrade and convert to Fahrenheit.*/
-
+function celsiusToFahrenheit(celsius) {
+    return celsius * 9 / 5 + 32;
+}
+console.log(celsiusToFahrenheit(25));
 
 
 
 
 /*7.	Write a function to find the maximum element in array of numbers. Filter out all non-number elements.*/
+function maxElement(array) {
+    let max = -Infinity;
+    for (var i = 0; i < array.length; i++) {
+        if (typeof array[i] === 'number' && array[i] > max) {
+            max = array[i];
+        }
+    }
+    return max;
+}
+console.log(maxElement([3, 18, 66, 0, 'a', 'b', 'c', 'd', 14, 44, 87]));
 
- 
+
+
 
 /*8.	Write a function to find the maximum and minimum elements. Function returns an array.*/
 
