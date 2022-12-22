@@ -54,14 +54,19 @@ console.log(listRotate([
 
 
 
-
-
-
-
-
 /*4.	Write a function that takes a number and returns array of its digits.*/
+function getDigits(numbers) {
+    var digits = [];
+    var string = numbers.toString();
+    for (var i = 0; i < string.length; i++) {
+        digits.push(parseInt(string[i]));
+    }
+    return digits;
+}
+console.log(getDigits(123456789));
 
- 
+
+
 
 /*5.	Write a program that prints a multiplication table for numbers up to 12.*/
 
