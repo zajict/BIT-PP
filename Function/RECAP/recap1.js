@@ -162,7 +162,7 @@ console.log(output);
 
 // Example 12
 
-// 'use strict';
+//'use strict';
 
 var global = parseInt("1e2");
 
@@ -188,10 +188,8 @@ function sum(num1, num2) {
     if (! num1 && ! num2) {
         return -1;
     }
-
     return num1 + num2;
 }
-
 var sumNumbers = sum;
 var result = sumNumbers();
 

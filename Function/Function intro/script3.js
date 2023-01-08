@@ -19,10 +19,9 @@ console.log(x)
 
 
 /* 2.	Write a program to join all elements of the array into a string skipping elements that are undefined, null, NaN or Infinity.
-[NaN, 0, 15, false, -22, '', undefined, 47, null] */
-function elementOfArrayIntoString(array) {
-    
-}
+l[NaN, 0, 15, false, -22, '', undefined, 47, nul] */
+
+
 
 /* 3.	Write a program to filter out falsy values from the array.
 [NaN, 0, 15, false, -22, '', undefined, 47, null] -> [15, -22, 47] */

@@ -6,7 +6,6 @@ function multiply(a, b) {
         return mResult + a + b;
     }
 }
-
 var output = multiply(3, 4);
 console.log(output(6, 7));
 
@@ -19,7 +18,6 @@ function multiply(a, b) {
         return mResult + a + b;
     }
 }
-
 var output = multiply(3, 4)(5, 5);
 console.log(output);
 
@@ -59,7 +57,6 @@ var input = [
 var output = transformArray(input, function (param) {
     return param + "";
 });
-
 console.log(output);
 
 function transformArray(array, action) {
@@ -73,7 +70,6 @@ function transformArray(array, action) {
 
 
 // Example 6
-
 var PI = 3.1;
 
 function circleSurface(radius) {
@@ -87,6 +83,7 @@ var output = circleSurface(5);
 console.log(output);
 
 
+
 // Example 7
 
 function circleCalc(radius, calculation) {
@@ -98,12 +95,11 @@ var output = circleCalc(7, function (r) {
     var PI = 3.14159;
     return 2 * r * PI;
 });
-
 console.log(output);
 
 
-// Example 8
 
+// Example 8
 var input = [
     "one",
     "1e3",
@@ -121,7 +117,6 @@ function transformArray(array, action) {
     }
     return result;
 }
-
 var output = transformArray(input, parseFloat);
 console.log(output);
 
@@ -130,49 +125,45 @@ console.log(output);
 
 
 // Example 10
-
-
 // Moze i ovako da se pise----- zadatak 10
 var cubeVolume = (a) => {
     return a * a * a;
 }
-
 function cubeCalculation(a, calc) {
     return calc(a);
 }
-
 output = cubeCalculation(10, cubeVolume)
 console.log(output);
 
 
-// Example 10
 
+// Example 10
 var cubeVolume = function (a) {
     return a * a * a;
 }
-
 function cubeCalculation(a, calc) {
     return calc(a);
 }
-
 output = cubeCalculation(10, cubeVolume(6))
 console.log(output);
 
 
-// Example 11
 
+// Example 11
 function cubeCalculation(a, calc) {
     return calc(a);
 }
-
 var output = cubeCalculation(10, function (a) {
     6 * a * a;
 })
 console.log(output);
 
 
-// Example 12
 
+
+
+
+// Example 12
 function cubeCalculation(a, calc) {
     return calc(a);
 }
@@ -183,8 +174,9 @@ var output = cubeCalculation(10, function (a) {
 console.log(output);
 
 
-// Example 13
 
+
+// Example 13
 function saySomething(msg1) {
     return function (msg2) {
         var output = msg1 + " " + msg2;
@@ -194,12 +186,12 @@ function saySomething(msg1) {
         }
     }
 }
-
 saySomething("Hi")("there");
 
 
-// Example 13
 
+
+// Example 13
 function saySomething(msg1) {
     function message(msg2) {
         var output = msg1 + " " + msg2;
@@ -211,12 +203,12 @@ function saySomething(msg1) {
     }
     return message;
 }
-
 saySomething("Hi")("there")();
 
 
-// Example 14
 
+
+// Example 14
 var myArr = [];
 
 var hi = function () {
