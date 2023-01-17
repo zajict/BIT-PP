@@ -12,6 +12,8 @@ function Person (name, surname) {
 }
 
 
+
+//inheritance 
 function Employee (name, surname, job, salary) {
     Person.call(this, name, surname);
     this.job = job;
@@ -20,6 +22,7 @@ function Employee (name, surname, job, salary) {
 Employee.prototype = Object.create(Person.prototype);
 
 Employee.prototype.constructor = Employee;
+
 
 Employee.prototype.getData = function () {
     return this.name + ' ' + this.surname + ' ' + this.job + ' ' + this.salary;
@@ -47,7 +50,6 @@ Developer.prototype.constructor = Developer;
 Developer.prototype.getSpecialization = function () {
     console.log(this.specialization);
 }
-
 
 
 

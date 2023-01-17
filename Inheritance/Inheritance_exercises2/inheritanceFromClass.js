@@ -17,6 +17,9 @@ var pera = new Person('Pera', 'Peric');
 console.log(pera);
 pera.printInfo();
 
+
+
+//inheritance
 class Programmer extends Person {
   constructor(name, surname, favoriteLanguage) {
     super(name, surname);
@@ -28,6 +31,8 @@ class Programmer extends Person {
     );
   }
 }
+
+
 
 var programmerPera = new Programmer('Pera', 'Peric', 'JS');
 // console.log(programmerPera);
