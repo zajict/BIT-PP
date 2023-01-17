@@ -1,7 +1,7 @@
 function App(name, licence, stars,) {
-    this.name = name;
-    this.licence = licence;
-    this.stars = stars;
+        this.name = name;
+        this.licence = licence;
+        this.stars = stars;    
 }
 
 App.prototype.isCCLicence = function () {
@@ -45,7 +45,6 @@ WebApp.prototype.reactBased = function () {
 
 
 
-
 function MobileApp(name, platforms, licence, stars) {
     App.call(this, name, licence, stars);
     this.platforms = platforms;
@@ -68,9 +67,6 @@ MobileApp.prototype.forAndroids = function () {
 
 
 
-
-
-
 var app = new WebApp('aplikacija', 'url address', 'React', 1234566788, 3.9);
 app.getData();
 app.reactBased();
@@ -87,8 +83,6 @@ mobApp.forAndroids();
 mobApp.isCCLicence();
 mobApp.like();
 mobApp.showStars();
-
-
 
 
 
