@@ -1,14 +1,14 @@
 class Festival {
     constructor() {
-        this.listOfAllMovies = [];
-        this.listOfAllPrograms = [];
+        this.listOfMovies = [];
+        this.listOfPrograms = [];
     }
 }
 
 class Movie {
     constructor(title, length, genre) {
         this.title = title;
-        this.length = length; // duration
+        this.length = length; 
         this.genre = genre;
     }
     getCode() {
@@ -27,15 +27,15 @@ class Program {
         this.listOfMovies = [];
     }
     addMovie(movie) {
-        // if (!(movie instanceof Movie)) {
-        //     throw new Error('Invalid movie input!');
-        // }
+        if (!(movie instanceof Movie)) {
+            throw new Error('Invalid movie input!');
+        }
         this.listOfMovies.push(movie);
     }
     getTotalDuration() {
         var total = 0;
         this.listOfMovies.forEach(function (movie) {
-            total += movie.length // duration;
+            total += movie.length 
             return total;
         })
     }
@@ -46,4 +46,5 @@ class Program {
         return this.date + ", " + this.getNumberOfMovies() + ", " + this.getTotalDuration() + " min";
     }
 }
+
 

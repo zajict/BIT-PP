@@ -38,12 +38,18 @@ function createMovie1() {
 
 function createProgram1() {
     var date1 = new Program(date.value);
-    console.log(date1);
     var newList = date1.addMovie();
-    // date1.listOfMovies = newList;
-    // console.log(date1.getProgram());
+    date1.listOfMovies = newList;
 
-}createMovie.addEventListener("click", createMovie1);
+}
+
+function addMovieToProgram() {
+    
+}
+
+
+
+createMovie.addEventListener("click", createMovie1);
 createProgram.addEventListener('click', createProgram1);
 
 
